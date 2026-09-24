@@ -12,8 +12,8 @@
   --fog: #9aa7b0;
   --type: "Special Elite", "Courier Prime", ui-monospace, monospace;
   --serif: "IM Fell English", "Source Serif 4", "Iowan Old Style", Georgia, serif;
-  --display: "Cinzel Decorative", "IM Fell English", Georgia, serif;
-  --cut: "Pirata One", "IM Fell English", Georgia, serif;
+  --display: "Uncial Antiqua", "IM Fell English", Georgia, serif;
+  --cut: "MedievalSharp", "Uncial Antiqua", "IM Fell English", Georgia, serif;
   --mono: "IBM Plex Mono", ui-monospace, monospace;
 }
 * { box-sizing: border-box; }
