@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OPEN SKY — an Anglofuturist field archive</title>
+  <meta name="description" content="A samizdat station for Anglofuturism. The official envelope is too small. Logs, essays, and skies-the-limit briefs for a country that can still build.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/station.css">
+  <link rel="icon" href="assets/mark.webp">
+</head>
+<body>
+  <div id="intro" role="dialog" aria-label="Station introduction">
+    <div class="scan"></div>
+    <div class="intro-stage">
+      <img class="intro-mark" src="assets/mark.webp" alt="Open Sky mark">
+      <div class="intro-lines intro-cursor"></div>
+    </div>
+    <button class="skip-intro" type="button">Skip transmission</button>
+  </div>
+
+  <header class="mast">
+    <a class="brand" href="#top">
+      <img src="assets/mark.webp" alt="">
+      <div>
+        <div class="brand-name">OPEN SKY</div>
+        <div class="brand-sub">Anglofuturist field archive</div>
+      </div>
+    </a>
+    <nav>
+      <a href="#archive">Logs</a>
+      <a href="#envelope">The envelope</a>
+      <a href="#horizons">Horizons</a>
+      <a href="#station">Station</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <img class="plate" src="assets/hero.webp" alt="English cathedral town at night with a civilian spaceplane and an orbital station overhead">
+      <div class="hero-copy wrap">
+        <div class="stamp-row">
+          <span class="stamp">Samizdat copy</span>
+          <span class="stamp gold">Not a manifesto</span>
+          <span class="stamp">Circulate</span>
+        </div>
+        <h1>The envelope is not the sky.</h1>
+        <p class="lede">Official Britain issues a narrow paper of things that may be said, and a narrower paper of things that may be built. This station is a field archive for the rest: dissident logs, stolen futures, and policy that still has altitude.</p>
+        <div class="cta-row">
+          <a class="btn solid" href="#archive">Open the logs</a>
+          <a class="btn" href="#horizons">Read the horizons brief</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="archive">
+      <div class="wrap">
+        <p class="kicker">Drawer 01 · Field logs</p>
+        <h2>Click a log. Follow the signal.</h2>
+        <p class="deck">Each card is a transmission: a film, an essay, a podcast, or an internal brief. The point is not a party line. The point is that the conversation is allowed to be larger than the room it was given.</p>
+        <div class="filters">
+          <button class="filter on" data-kind="all" type="button">All</button>
+          <button class="filter" data-kind="video" type="button">Video</button>
+          <button class="filter" data-kind="essay" type="button">Essays</button>
+          <button class="filter" data-kind="audio" type="button">Audio</button>
+          <button class="filter" data-kind="policy" type="button">Policy</button>
+        </div>
+        <div class="logs" id="logs"></div>
+      </div>
+    </section>
+
+    <section id="envelope">
+      <div class="wrap">
+        <p class="kicker">Drawer 02 · Diagnosis</p>
+        <h2>A country briefed to think small.</h2>
+        <div class="columns">
+          <article class="dossier">
+            <div class="meta-strip">
+              <span>File OS-ENV-01</span>
+              <span>Classification: circulate</span>
+              <span>Origin: this station</span>
+            </div>
+            <p>The contemporary settlement does not only prefer certain policies. It prefers a certain <em>size</em> of policy. Housing becomes a vocabulary of targets. Energy becomes a vocabulary of shame. Transport becomes a vocabulary of delay. Industry becomes a heritage trail. Ambition is treated as a taste violation, as if wanting a finished railway were a form of extremism.</p>
+            <p>That is the envelope. It is enforced less by statute than by tone: the raised eyebrow, the professional risk, the sudden discovery that a proposal is “not serious.” Serious, in this usage, means already priced into the existing failure.</p>
+            <blockquote>Samizdat was never only a method of printing. It was a method of refusing the official page-count.</blockquote>
+            <p>Anglofuturism, as this archive uses it, is not a costume and it is not a race-myth. It is a permission structure pointed the other way: Britain as a high-energy, high-skill, high-beauty country that can still do difficult things on purpose. The “Anglo” is a civilisational toolbox — law, workshop culture, empiricism, irony, the habit of making institutions that outlast a ministry. The “futurism” is the unfashionable belief that descendants are real.</p>
+            <p>We keep the blood-and-soil romance out of the drawer. A future that cannot speak without a folk-myth of soil is not a future; it is a tantrum in period dress. The images here are workshops, reactors, streets, rails, harbours, and orbit. People in them are building, travelling, and living. That is the whole aesthetic argument.</p>
+          </article>
+          <aside>
+            <div class="card">
+              <div class="ref">Working distinction</div>
+              <h3>Envelope politics</h3>
+              <p>Manages the existing machine. Treats capacity as a mood. Measures virtue by the narrowness of the ask.</p>
+            </div>
+            <div class="card" style="margin-top:16px">
+              <div class="ref">Working distinction</div>
+              <h3>Open-sky politics</h3>
+              <p>Asks what the machine is for. Treats capacity as a craft. Measures virtue by whether the grandchildren inherit a working country.</p>
+            </div>
+            <div class="card" style="margin-top:16px">
+              <div class="ref">Line we will not cross</div>
+              <h3>No folk-biology</h3>
+              <p>No racial mysticism, no soil-cult, no imported fascist kit. If a proposal needs those to stand up, it is not Anglofuturism as we mean it. It is someone else’s project wearing our coat.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="horizons">
+      <div class="wrap">
+        <p class="kicker">Drawer 03 · Horizons brief</p>
+        <h2>Skies the limit, written down.</h2>
+        <p class="deck">A stockroom, not a sacred text. Steal from it. Improve it. Argue it into better shape. The only disallowed move is to pretend these are unthinkable.</p>
+        <div class="horizon-grid">
+          <article class="card">
+            <div class="ref">OS-H-01 · Energy</div>
+            <h3>A reactor for every county town</h3>
+            <p>Small modular plants designed as civic buildings, not apologetic sheds. Heat the street, power the workshop, retire the superstition that electrons are a moral category. Pair them with tidal barrages, geothermal, and a fusion programme that is allowed to take longer than a news cycle.</p>
+          </article>
+          <article class="card">
+            <div class="ref">OS-H-02 · Motion</div>
+            <h3>Railways that terminate in a place, not a inquiry</h3>
+            <p>Finish the lines. Then build the next ones. High-speed service through new towns, freight that does not rot in a lay-by, and the unglamorous regional networks that make a country feel contiguous.</p>
+          </article>
+          <article class="card">
+            <div class="ref">OS-H-03 · Habitation</div>
+            <h3>Beautiful density as a public good</h3>
+            <p>Georgian and Victorian street patterns were a technology for living. Recover them. New towns with workshops on the ground floor, family flats above, and planning law that treats a handsome terrace as a success rather than a loophole.</p>
+          </article>
+          <article class="card">
+            <div class="ref">OS-H-04 · Industry</div>
+            <h3>Machine tools before sermons</h3>
+            <p>A country that cannot make its own components is a country that rents its future. Micro-factories, foundry revival, sovereign compute, and procurement that prefers a working British workshop to a perfect slide deck.</p>
+          </article>
+          <article class="card">
+            <div class="ref">OS-H-05 · Coast &amp; ice</div>
+            <h3>Harbours, barrages, Antarctic stations</h3>
+            <p>The sea is not décor. Reclaim land where it is sane. Build the Severn properly. Treat the British Antarctic Territory as a scientific and logistical frontier rather than a footnote in a textbook.</p>
+          </article>
+          <article class="card">
+            <div class="ref">OS-H-06 · Orbit</div>
+            <h3>A civilian spaceport with a pub at the gate</h3>
+            <p>Cornwall and the North Sea as launch and recovery geography. Not empire-cosplay. A workshop overhead: research, weather, communications, and the ordinary arrogance of a seafaring country that noticed there is more sea.</p>
+          </article>
+          <article class="card">
+            <div class="ref">OS-H-07 · Capacity</div>
+            <h3>Isambard missions</h3>
+            <p>Send competent people to states that can still build, and make them bring the methods home. Japan’s Iwakura Mission was not nostalgia. It was homework. Whitehall should be made to sit it.</p>
+          </article>
+          <article class="card">
+            <div class="ref">OS-H-08 · Festival</div>
+            <h3>A Festival of Britain that is not a wake</h3>
+            <p>1951 was a tonic because it showed the public the tools. Do it again: Dome of Discovery as a working exhibition of reactors, housing typologies, shipyards, labs. Beauty as a delivery method for seriousness.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="station">
+      <div class="wrap columns">
+        <div>
+          <p class="kicker">Drawer 04 · The station</p>
+          <h2>How to use this place.</h2>
+          <p>Open Sky is an unofficial Anglofuturist archive. It is not the podcast, not a party, and not a claim to own a word that already has several lives. It is a room in which the conversation is allowed to be larger than the approved envelope.</p>
+          <p>If you have a log — an essay, a film, a drawing of a plant that looks like a civic building, a costing for a barrage, a street plan that a child could love — send it as if you were passing a carbon copy under a door. The house style is literate, specific, and uninterested in imported mythologies.</p>
+          <p>Existing public workshops worth knowing: the <a href="https://www.anglofuturism.co/about" target="_blank" rel="noopener">Anglofuturism podcast</a>, the originating <a href="https://unherd.com/2022/08/its-time-for-anglofuturism/" target="_blank" rel="noopener">UnHerd essay</a>, and the <a href="https://anglofuturism.net/policies/" target="_blank" rel="noopener">policy shelf</a>.</p>
+        </div>
+        <aside class="dossier">
+          <div class="meta-strip">
+            <span>House rules</span>
+            <span>Posted on the door</span>
+          </div>
+          <p>1. Argue about capacity, beauty, energy, law, and time-horizons.</p>
+          <p>2. Do not smuggle a folk-religion of blood into a conversation about reactors.</p>
+          <p>3. Prefer drawings, numbers, and finished objects to vibes.</p>
+          <p>4. Credit the people you steal from.</p>
+          <p>5. Leave the official envelope on the table so visitors can see how small it is.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>OPEN SKY · unofficial Anglofuturist field archive · copy 03 of n</div>
+      <div>No party mark. No soil-cult. The sky remains unfiled.</div>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="sheet" role="document">
+      <button class="close" type="button">Close</button>
+      <div class="sheet-body"></div>
+    </div>
+  </div>
+
+  <script src="js/station.js"></script>
+</body>
+</html>
