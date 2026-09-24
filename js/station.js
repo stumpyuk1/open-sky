@@ -5,7 +5,7 @@ const LOGS = [
     stamp: "TRANSMISSION",
     title: "Can Anglofuturism save Britain?",
     blurb: "Aris Roussinos and Tom Ough unpack the idea on UnHerd: high modernism without the managed-decline script.",
-    thumb: "assets/hero.webp",
+    thumb: "assets/hero.jpg",
     wide: true,
     body: "The originating public conversation. Not a party broadcast. A reminder that a country can still want things larger than the next fiscal event.",
     video: "https://www.youtube.com/embed/r6yZoU9DanE",
@@ -18,7 +18,7 @@ const LOGS = [
     stamp: "FOUNDING NOTE",
     title: "It's time for Anglofuturism",
     blurb: "The 2022 UnHerd essay that named the mood: nuclear county towns, houses people can live in, rail that actually arrives.",
-    thumb: "assets/log-energy.webp",
+    thumb: "assets/log-knights.jpg",
     body: "Roussinos's original sketch is still the cleanest public definition: fuse the can-do of postwar high modernism with a landscape that still looks like a place, not a logistics park. Generational infrastructure. Cheap energy. Homes. Farms that feed the country. The state as a builder again, not a commentator.",
     link: "https://unherd.com/2022/08/its-time-for-anglofuturism/",
     linkLabel: "Read the essay"
@@ -29,7 +29,7 @@ const LOGS = [
     stamp: "FIELD NOTE",
     title: "The envelope is not the sky",
     blurb: "Internal briefing. How a narrow Overton window became a substitute for ambition — and why this archive exists.",
-    thumb: "assets/paper.webp",
+    thumb: "assets/paper.jpg",
     body: "Official Britain talks as if the available futures are a short menu: manage decline politely, decorate it with targets, and treat any larger proposal as a category error. That is an envelope, not a country. Anglofuturism, in this station's use of the word, is the refusal to let the current Overton window pose as physical law. Energy abundance, beautiful density, completed railways, workshops, orbital industry, Antarctic research, tidal barrages — these are engineering and institutional problems. They are allowed to be discussed. They are allowed to be wanted.",
     hash: "#envelope"
   },
@@ -39,7 +39,7 @@ const LOGS = [
     stamp: "STATION FEED",
     title: "The Anglofuturism podcast",
     blurb: "Tom Ough and Calum Drysdale, allegedly broadcasting from a thatched space station. Interviews with people who still want to build.",
-    thumb: "assets/log-space.webp",
+    thumb: "assets/log-galleon.jpg",
     body: "The most sustained public workshop the movement has. Housing, crime, spaceports, factories, state capacity. Listen as a dossier, not as content.",
     link: "https://www.anglofuturism.co/about",
     linkLabel: "Open the station"
@@ -50,7 +50,7 @@ const LOGS = [
     stamp: "CIRCULATE",
     title: "Embrace Anglofuturism",
     blurb: "CapX on jolting Britain out of its stupor: intergenerational projects that still feel like home.",
-    thumb: "assets/log-rail.webp",
+    thumb: "assets/log-blitz.jpg",
     body: "A compact case for ambition as policy rather than vibe. Artificial islands, spaceports, geothermal, factories, the unfashionable idea that a country can decide to be good at things again.",
     link: "https://capx.co/embrace-anglofuturism-we-can-jolt-britain-out-of-its-stupor",
     linkLabel: "Read at CapX"
@@ -61,7 +61,7 @@ const LOGS = [
     stamp: "COUNTER-BRIEF",
     title: "The progressive case for Anglofuturism",
     blurb: "New Statesman: there is nothing left-wing about a country that cannot build.",
-    thumb: "assets/log-town.webp",
+    thumb: "assets/log-pit.jpg",
     body: "Useful because it breaks the reflex that optimism about national capacity must belong to one bench. If your politics needs houses, energy, and industry, it needs a country that can deliver them.",
     link: "https://www.newstatesman.com/ideas/2025/11/the-progressive-case-for-anglofuturism",
     linkLabel: "Read at New Statesman"
@@ -72,7 +72,7 @@ const LOGS = [
     stamp: "DOSSIER",
     title: "Isambard Envoys & the policy shelf",
     blurb: "A stockroom, not a manifesto: competency, energy, infrastructure, the unembarrassed study of states that still work.",
-    thumb: "assets/log-energy.webp",
+    thumb: "assets/log-civil.jpg",
     body: "The existing Anglofuturism policy shelf treats ideas as tools to be lifted. That is the correct posture. This archive does the same: no party ownership, no blood-and-soil romance, no permission structure. Read, argue, steal.",
     link: "https://anglofuturism.net/policies/",
     linkLabel: "Open the policy shelf"
@@ -83,7 +83,7 @@ const LOGS = [
     stamp: "OPEN SKY",
     title: "Horizons: a skies-the-limit brief",
     blurb: "County-town reactors. Finished railways. Georgian new towns. Cornish spaceport. A Festival of Britain that is not a museum.",
-    thumb: "assets/log-space.webp",
+    thumb: "assets/log-storm.jpg",
     wide: true,
     body: "A working list of futures that fit in an envelope only if you fold the paper wrong. Built for argument, not reverence.",
     hash: "#horizons"
@@ -109,6 +109,7 @@ function renderLogs(filter = "all") {
           <div class="kind">${log.stamp} · ${log.kind}</div>
           <h3>${log.title}</h3>
           <p>${log.blurb}</p>
+          <div class="file-no">unfiled · ${log.id.toUpperCase()} · pass on</div>
         </div>
       </button>`);
     card.addEventListener("click", () => openLog(log.id));
@@ -127,7 +128,7 @@ function openLog(id) {
   const modal = document.getElementById("modal");
   const sheet = modal.querySelector(".sheet-body");
   sheet.innerHTML = `
-    <div class="kind">${log.stamp} · LOG ${log.id.toUpperCase()}</div>
+    <div class="kind">${log.stamp} · UNFILED ${log.id.toUpperCase()}</div>
     <h2>${log.title}</h2>
     <p>${log.body}</p>
     ${log.video ? `<div class="frame"><iframe src="${log.video}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="${log.title}"></iframe></div>` : ""}
@@ -170,13 +171,13 @@ function playIntro() {
     return;
   }
   const lines = [
-    { text: "FIELD STATION  ·  OPEN SKY", cls: "ok" },
+    { text: "WARNING  ·  YOU ARE NOT ON THE APPROVED CHANNEL", cls: "warn" },
     { text: "carrier: unlicensed  /  protocol: samizdat-3", cls: "" },
-    { text: "the official envelope is too small.", cls: "warn" },
-    { text: "mounting alternative futures…", cls: "" },
+    { text: "official envelope rejected — page-count insufficient", cls: "glitch" },
+    { text: "mounting withheld futures…", cls: "" },
     { text: "ENERGY   HABITATION   MOTION   INDUSTRY   ORBIT", cls: "ok" },
-    { text: "no blood-and-soil. no permission structure.", cls: "warn" },
-    { text: "ARCHIVE OPEN.", cls: "ok" }
+    { text: "if you can read this the seal has already failed", cls: "warn" },
+    { text: "ARCHIVE OPEN  ·  DO NOT FILE", cls: "ok" }
   ];
   const stage = intro.querySelector(".intro-lines");
   const mark = intro.querySelector(".intro-mark");
@@ -197,6 +198,9 @@ function playIntro() {
   };
   setTimeout(tick, 400);
   intro.querySelector(".skip-intro").addEventListener("click", skipIntro);
+  intro.addEventListener("click", (e) => {
+    if (e.target.closest(".skip-intro")) return;
+  });
   window.addEventListener("keydown", (e) => {
     if (e.key === "Escape" || e.key === "Enter" || e.key === " ") skipIntro();
   });
