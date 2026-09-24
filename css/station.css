@@ -254,3 +254,60 @@ footer {
   font-family: var(--mono); font-size: 12px; color: var(--fog); background: #050506;
 }
 footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+
+
+/* ---- view transitions: photocopied handoff ---- */
+@view-transition { navigation: auto; }
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: .55s;
+  animation-timing-function: steps(7, end);
+  mix-blend-mode: plus-lighter;
+}
+::view-transition-old(root) {
+  animation-name: vt-out;
+}
+::view-transition-new(root) {
+  animation-name: vt-in;
+}
+@keyframes vt-out {
+  to { opacity: 0; filter: contrast(1.4) saturate(.4); transform: rotate(-0.4deg) scale(1.02); }
+}
+@keyframes vt-in {
+  from { opacity: 0; filter: contrast(1.6) saturate(.3); transform: rotate(0.6deg) scale(.985); }
+  to { opacity: 1; filter: none; transform: none; }
+}
+
+.hero { view-transition-name: plate; }
+.brand { view-transition-name: brand; }
+.logs { view-transition-name: dossier; }
+.modal.open .sheet { view-transition-name: sheet; }
+
+::view-transition-old(plate),
+::view-transition-new(plate) {
+  animation-duration: .7s;
+  animation-timing-function: cubic-bezier(.2,.7,.2,1);
+}
+::view-transition-old(sheet) {
+  animation: vt-sheet-out .4s steps(5, end) both;
+}
+::view-transition-new(sheet) {
+  animation: vt-sheet-in .45s steps(6, end) both;
+}
+@keyframes vt-sheet-in {
+  from { opacity: 0; transform: translateY(18px) rotate(-1.2deg); filter: contrast(1.5); }
+}
+@keyframes vt-sheet-out {
+  to { opacity: 0; transform: translateY(10px) rotate(1deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  @view-transition { navigation: none; }
+  ::view-transition-old(root),
+  ::view-transition-new(root),
+  ::view-transition-old(sheet),
+  ::view-transition-new(sheet) {
+    animation: none !important;
+  }
+}

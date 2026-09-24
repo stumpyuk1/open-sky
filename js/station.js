@@ -96,14 +96,26 @@ function el(html) {
   return t.content.firstElementChild;
 }
 
-function renderLogs(filter = "all") {
+function transit(fn) {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    fn();
+    return;
+  }
+  if (document.startViewTransition) {
+    document.startViewTransition(fn);
+  } else {
+    fn();
+  }
+}
+
+function paintLogs(filter = "all") {
   const root = document.getElementById("logs");
   if (!root) return;
   const items = LOGS.filter((l) => filter === "all" || l.kind === filter);
   root.innerHTML = "";
   items.forEach((log) => {
     const card = el(`
-      <button class="log ${log.wide ? "wide" : ""}" data-id="${log.id}" type="button">
+      <button class="log ${log.wide ? "wide" : ""}" data-id="${log.id}" type="button" style="view-transition-name: log-${log.id}">
         <img class="thumb" src="${log.thumb}" alt="">
         <div class="body">
           <div class="kind">${log.stamp} · ${log.kind}</div>
@@ -115,6 +127,10 @@ function renderLogs(filter = "all") {
     card.addEventListener("click", () => openLog(log.id));
     root.appendChild(card);
   });
+}
+
+function renderLogs(filter = "all") {
+  transit(() => paintLogs(filter));
 }
 
 function openLog(id) {
@@ -134,15 +150,19 @@ function openLog(id) {
     ${log.video ? `<div class="frame"><iframe src="${log.video}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="${log.title}"></iframe></div>` : ""}
     ${log.link ? `<p><a class="btn solid" style="color:#1b2430" href="${log.link}" target="_blank" rel="noopener">${log.linkLabel || "Open resource"}</a></p>` : ""}
   `;
-  modal.classList.add("open");
-  modal.setAttribute("aria-hidden", "false");
+  transit(() => {
+    modal.classList.add("open");
+    modal.setAttribute("aria-hidden", "false");
+  });
 }
 
 function closeModal() {
   const modal = document.getElementById("modal");
-  modal.classList.remove("open");
-  modal.setAttribute("aria-hidden", "true");
-  modal.querySelector(".sheet-body").innerHTML = "";
+  transit(() => {
+    modal.classList.remove("open");
+    modal.setAttribute("aria-hidden", "true");
+    modal.querySelector(".sheet-body").innerHTML = "";
+  });
 }
 
 function bindFilters() {
@@ -163,9 +183,11 @@ function skipIntro() {
     film.pause();
     film.classList.add("is-done");
   }
-  intro.classList.add("done");
   sessionStorage.setItem("opensky-intro", "1");
-  setTimeout(() => intro.remove(), 750);
+  transit(() => {
+    intro.classList.add("done");
+    intro.remove();
+  });
 }
 
 function runTypewriter(intro) {
@@ -241,7 +263,7 @@ function playIntro() {
 
 document.addEventListener("DOMContentLoaded", () => {
   playIntro();
-  renderLogs();
+  paintLogs();
   bindFilters();
   document.getElementById("modal")?.addEventListener("click", (e) => {
     if (e.target.id === "modal") closeModal();
