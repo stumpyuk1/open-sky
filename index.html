@@ -8,14 +8,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=IM+Fell+English:ital@0;1&family=IBM+Plex+Mono:wght@400;500&family=Pirata+One&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Special+Elite&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/station.css?v=6">
+  <link rel="stylesheet" href="css/station.css?v=7">
   <link rel="icon" href="assets/mark.svg">
 </head>
 <body>
   <div id="intro" role="dialog" aria-label="Station introduction">
+    <video id="intro-film" class="intro-film" playsinline muted autoplay preload="auto" poster="assets/hero.jpg">
+      <source src="assets/intro.mp4" type="video/mp4">
+    </video>
     <div class="scan"></div>
     <div class="intro-warn">UNAUTHORISED CHANNEL</div>
-    <div class="intro-stage">
+    <div class="intro-stage is-waiting">
       <img class="intro-mark" src="assets/mark.svg" alt="Open Sky mark">
       <div class="intro-lines intro-cursor"></div>
     </div>
@@ -210,6 +213,6 @@
     </div>
   </div>
 
-  <script src="js/station.js?v=6"></script>
+  <script src="js/station.js?v=7"></script>
 </body>
 </html>

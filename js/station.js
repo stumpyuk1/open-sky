@@ -158,18 +158,17 @@ function bindFilters() {
 function skipIntro() {
   const intro = document.getElementById("intro");
   if (!intro || intro.classList.contains("done")) return;
+  const film = document.getElementById("intro-film");
+  if (film) {
+    film.pause();
+    film.classList.add("is-done");
+  }
   intro.classList.add("done");
   sessionStorage.setItem("opensky-intro", "1");
   setTimeout(() => intro.remove(), 750);
 }
 
-function playIntro() {
-  const intro = document.getElementById("intro");
-  if (!intro) return;
-  if (sessionStorage.getItem("opensky-intro") === "1" || location.hash) {
-    intro.remove();
-    return;
-  }
+function runTypewriter(intro) {
   const lines = [
     { text: "WARNING  ·  YOU ARE NOT ON THE APPROVED CHANNEL", cls: "warn" },
     { text: "carrier: unlicensed  /  protocol: samizdat-3", cls: "" },
@@ -181,6 +180,9 @@ function playIntro() {
   ];
   const stage = intro.querySelector(".intro-lines");
   const mark = intro.querySelector(".intro-mark");
+  const wrap = intro.querySelector(".intro-stage");
+  wrap.classList.remove("is-waiting");
+  wrap.classList.add("is-live");
   mark.classList.add("show");
   let i = 0;
   const tick = () => {
@@ -196,11 +198,42 @@ function playIntro() {
     i += 1;
     setTimeout(tick, 520);
   };
-  setTimeout(tick, 400);
+  setTimeout(tick, 280);
+}
+
+function playIntro() {
+  const intro = document.getElementById("intro");
+  if (!intro) return;
+  if (sessionStorage.getItem("opensky-intro") === "1" || location.hash) {
+    intro.remove();
+    return;
+  }
+  const film = document.getElementById("intro-film");
+  const startText = () => {
+    if (intro.dataset.phase === "text") return;
+    intro.dataset.phase = "text";
+    if (film) film.classList.add("is-done");
+    runTypewriter(intro);
+  };
+  if (film) {
+    const go = () => startText();
+    film.addEventListener("ended", go, { once: true });
+    film.addEventListener("error", go, { once: true });
+    const kick = film.play();
+    if (kick && typeof kick.catch === "function") kick.catch(go);
+    // unmute on first gesture so the clip can speak
+    const armSound = () => {
+      film.muted = false;
+      film.play().catch(() => {});
+    };
+    intro.addEventListener("click", armSound, { once: true });
+    setTimeout(() => {
+      if (intro.dataset.phase !== "text" && film.readyState < 2) go();
+    }, 8000);
+  } else {
+    startText();
+  }
   intro.querySelector(".skip-intro").addEventListener("click", skipIntro);
-  intro.addEventListener("click", (e) => {
-    if (e.target.closest(".skip-intro")) return;
-  });
   window.addEventListener("keydown", (e) => {
     if (e.key === "Escape" || e.key === "Enter" || e.key === " ") skipIntro();
   });
