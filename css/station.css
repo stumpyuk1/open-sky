@@ -11,8 +11,9 @@
   --stamp-deep: #8e241c;
   --fog: #9aa7b0;
   --type: "Special Elite", "Courier Prime", ui-monospace, monospace;
-  --serif: "Source Serif 4", "Iowan Old Style", Georgia, serif;
-  --display: "Fraunces", "Source Serif 4", Georgia, serif;
+  --serif: "IM Fell English", "Source Serif 4", "Iowan Old Style", Georgia, serif;
+  --display: "Cinzel Decorative", "IM Fell English", Georgia, serif;
+  --cut: "Pirata One", "IM Fell English", Georgia, serif;
   --mono: "IBM Plex Mono", ui-monospace, monospace;
 }
 * { box-sizing: border-box; }
@@ -102,7 +103,7 @@ button, input, select { font: inherit; }
   width: 40px; height: 40px; object-fit: cover; border: 1px solid var(--brass-dim);
   filter: contrast(1.15); transform: rotate(-4deg); background: #111;
 }
-.brand-name { font-family: var(--type); letter-spacing: .12em; font-size: 16px; }
+.brand-name { font-family: var(--cut); letter-spacing: .08em; font-size: 22px; font-weight: 400; }
 .brand-sub { font-family: var(--mono); font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: var(--brass); }
 nav { display: flex; flex-wrap: wrap; gap: 6px 16px; }
 nav a {
@@ -132,13 +133,13 @@ nav a:hover { color: var(--stamp); }
 .hero-copy { position: relative; z-index: 3; color: var(--ink); padding: 48px 0 58px; }
 .stamp-row { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 16px; }
 .stamp {
-  font-family: var(--type); font-size: 13px; letter-spacing: .12em; text-transform: uppercase;
+  font-family: var(--cut); font-size: 16px; letter-spacing: .06em; text-transform: none;
   color: #f3b4ae; border: 2px solid var(--stamp); padding: 4px 8px; transform: rotate(-3deg);
 }
 .stamp.gold { color: var(--brass); border-color: var(--brass); transform: rotate(2deg); }
 .stamp.black { color: var(--ink); border-color: var(--ink); transform: rotate(-1deg); }
 .hero h1 {
-  font-family: var(--display); font-weight: 500; font-size: clamp(42px, 7vw, 86px);
+  font-family: var(--cut); font-weight: 400; font-size: clamp(46px, 8vw, 92px); font-style: normal;
   line-height: .9; margin: 0 0 16px; letter-spacing: -.02em; max-width: 14ch;
   text-shadow: 0 2px 18px rgba(0,0,0,.55);
 }
@@ -161,9 +162,9 @@ nav a:hover { color: var(--stamp); }
 
 section { padding: 70px 0; position: relative; z-index: 2; }
 section + section { border-top: 1px solid #221e1b; }
-.kicker { font-family: var(--mono); font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--stamp); margin: 0 0 8px; }
-h2 { font-family: var(--display); font-weight: 550; font-size: clamp(30px, 4vw, 48px); line-height: 1.05; margin: 0 0 18px; color: #f3eee4; }
-h3 { font-family: var(--display); font-weight: 550; margin: 0 0 8px; color: #f3eee4; }
+.kicker { font-family: var(--cut); font-size: 18px; letter-spacing: .08em; text-transform: none; color: var(--stamp); margin: 0 0 8px; }
+h2 { font-family: var(--display); font-weight: 700; font-size: clamp(28px, 3.8vw, 46px); line-height: 1.08; margin: 0 0 18px; color: #f3eee4; letter-spacing: .04em; }
+h3 { font-family: var(--serif); font-weight: 400; font-style: italic; margin: 0 0 8px; color: #f3eee4; }
 .deck { max-width: 68ch; margin: 0 0 28px; color: var(--ink-dim); }
 
 .dossier, .card, .log, .sheet {
