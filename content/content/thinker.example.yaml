@@ -1,0 +1,15 @@
+# One file per thinker once a Sheet row is status=ready.
+# I compile these (or the Sheet directly) into content/thinkers.json.
+
+id: thk-001
+status: ready
+name: Aris Roussinos
+one_line: Named the public mood in 2022.
+why_on_the_map: Originating UnHerd essay; still the cleanest short definition.
+guardrail: Journalist, not a mascot. Quote him, do not enlist him.
+role: essayist
+links:
+  - label: UnHerd essay
+    url: https://unherd.com/2022/08/its-time-for-anglofuturism/
+themes: [energy, habitation, capacity]
+portrait: assets/log-knights.jpg

@@ -1,0 +1,17 @@
+# One file per theme. Resources nest underneath.
+
+id: thm-001
+status: ready
+slug: elite-theory
+title: Elite Theory
+one_line: Who actually decides, and how that differs from the story on the news.
+guardrail: Analysis of power, not a hunt for bloodlines.
+why_this_cluster: The envelope is often an elite consensus posing as weather.
+resources:
+  - kind: book
+    title: The Power Elite
+    authors: C. Wright Mills
+    url: https://en.wikipedia.org/wiki/The_Power_Elite
+    one_line: Mid-century map of interlocking civic, military, and economic command.
+    year: 1956
+    free_or_pay: mixed

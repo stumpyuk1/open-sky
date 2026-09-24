@@ -175,6 +175,10 @@ section + section { border-top: 1px solid #221e1b; }
 h2 { font-family: var(--display); font-weight: 700; font-size: clamp(28px, 3.8vw, 46px); line-height: 1.08; margin: 0 0 18px; color: #f3eee4; letter-spacing: .04em; }
 h3 { font-family: var(--serif); font-weight: 400; font-style: italic; margin: 0 0 8px; color: #f3eee4; }
 .deck { max-width: 68ch; margin: 0 0 28px; color: var(--ink-dim); }
+#pledge { padding-top: 56px; }
+.pledge-sheet { max-width: 78ch; }
+.pledge-sheet p { font-size: 1.05em; }
+.pledge-title { font-family: var(--cut); font-style: normal; font-size: 28px; margin: 8px 0 16px; color: var(--brass); }
 
 .dossier, .card, .log, .sheet {
   background: linear-gradient(180deg, #1c1917, #141211);
