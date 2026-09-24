@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Open Sky mark">
+  <rect width="200" height="200" fill="#f3ead6"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#1b2430" stroke-width="3"/>
+  <circle cx="100" cy="100" r="78" fill="none" stroke="#b8924a" stroke-width="1.2"/>
+  <circle cx="100" cy="100" r="52" fill="none" stroke="#3d5a6e" stroke-width=".6" stroke-dasharray="2 3"/>
+  <circle cx="100" cy="100" r="28" fill="none" stroke="#b8924a" stroke-width=".6"/>
+  <g fill="#1b2430">
+    <polygon points="100,18 106,86 100,78 94,86"/>
+    <polygon points="100,182 106,114 100,122 94,114"/>
+    <polygon points="18,100 86,94 78,100 86,106"/>
+    <polygon points="182,100 114,94 122,100 114,106"/>
+  </g>
+  <g fill="#b8924a">
+    <polygon points="38,38 92,92 86,100 92,108"/>
+    <polygon points="162,38 108,92 114,100 108,108"/>
+    <polygon points="38,162 92,108 86,100 92,92"/>
+    <polygon points="162,162 108,108 114,100 108,92"/>
+  </g>
+  <circle cx="100" cy="100" r="5" fill="#1b2430"/>
+</svg>
