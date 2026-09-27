@@ -1,0 +1,50 @@
+{
+  "updated": "2026-09-27",
+  "themes": [
+    {
+      "id": "thm-001",
+      "slug": "elite-theory",
+      "title": "Elite Theory",
+      "one_line": "Who actually decides, and how that differs from the story on the news.",
+      "guardrail": "Analysis of power, not a hunt for bloodlines.",
+      "why": "The envelope is often an elite consensus posing as weather. Name the machinery.",
+      "related": ["Vilfredo Pareto", "Robert Michels", "Neema Parvini"],
+      "sort": 10,
+      "resources": [
+        {
+          "id": "res-001",
+          "kind": "book",
+          "title": "The Power Elite",
+          "authors": "C. Wright Mills",
+          "url": "https://en.wikipedia.org/wiki/The_Power_Elite",
+          "one_line": "The mid-century map of interlocking civic, military, and economic command.",
+          "guardrail": "Historical sociology, not a meme.",
+          "year": "1956",
+          "free_or_pay": "mixed"
+        }
+      ]
+    },
+    {
+      "id": "thm-002",
+      "slug": "noblesse-oblige",
+      "title": "Noblesse Oblige",
+      "one_line": "Privilege and high status carry a duty to act responsibly toward those with less of both.",
+      "guardrail": "An older welfare grammar. No racial component.",
+      "why": "The envelope insists the current welfare model is the only welfare model.",
+      "related": ["Christopher Lasch", "Nassim Nicholas Taleb", "Alexis de Tocqueville"],
+      "sort": 9,
+      "resources": []
+    },
+    {
+      "id": "thm-003",
+      "slug": "cyclical-history",
+      "title": "Cyclical History",
+      "one_line": "Civilisations do not progress forever in a straight line. They thicken, peak, decay, and start again.",
+      "guardrail": "Analysis of history with no racial component.",
+      "why": "Challenges the official story of endless accumulating progress.",
+      "related": ["Giambattista Vico", "Oswald Spengler", "Peter Turchin", "Ray Dalio"],
+      "sort": 8,
+      "resources": []
+    }
+  ]
+}
