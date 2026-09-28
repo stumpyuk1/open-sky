@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-27",
+  "updated": "2026-09-28",
   "thinkers": [
     {
       "id": "thk-001",
@@ -66,14 +66,14 @@
       "name": "Wyndham Lewis",
       "one_line": "Britain's answer to Italian Futurism.",
       "why": "Founded the Vorticists — a modernist avant-garde rooted in an Anglo temperament, not Milanese theatre.",
-      "guardrail": "Aesthetic ancestor only. BLAST is a magazine, not a political programme.",
+      "guardrail": "Esoteric categorisation only. BLAST is a magazine, not a political programme.",
       "role": "visionary",
       "home_url": "https://www.tate.org.uk/art/art-terms/v/vorticism/blast-radical-vorticist-manifesto",
       "home_label": "BLAST / Tate",
       "substack": "",
       "x_handle": "",
       "other_url": "",
-      "themes": ["futurism"],
+      "themes": ["futurism", "esotericism"],
       "plate": "assets/log-storm.jpg"
     },
     {

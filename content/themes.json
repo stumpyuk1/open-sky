@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-27",
+  "updated": "2026-09-28",
   "themes": [
     {
       "id": "thm-001",
@@ -29,22 +29,80 @@
       "slug": "noblesse-oblige",
       "title": "Noblesse Oblige",
       "one_line": "Privilege and high status carry a duty to act responsibly toward those with less of both.",
-      "guardrail": "An older welfare grammar. No racial component.",
+      "guardrail": "An alternative welfare grammar. Duty, not blood.",
       "why": "The envelope insists the current welfare model is the only welfare model.",
       "related": ["Christopher Lasch", "Nassim Nicholas Taleb", "Alexis de Tocqueville"],
       "sort": 9,
-      "resources": []
+      "resources": [
+        {
+          "id": "res-004",
+          "kind": "book",
+          "title": "The Revolt of the Elites and the Betrayal of Democracy",
+          "authors": "Christopher Lasch",
+          "url": "https://en.wikipedia.org/wiki/The_Revolt_of_the_Elites_and_the_Betrayal_of_Democracy",
+          "one_line": "Contrasts rooted, landed aristocracies with modern cosmopolitan meritocrats who treat privilege as purely earned and owe nothing to the places they leave.",
+          "guardrail": "Historian and social critic. Class and place, not folk-biology.",
+          "year": "1995",
+          "free_or_pay": "mixed"
+        }
+      ]
     },
     {
       "id": "thm-003",
       "slug": "cyclical-history",
       "title": "Cyclical History",
       "one_line": "Civilisations do not progress forever in a straight line. They thicken, peak, decay, and start again.",
-      "guardrail": "Analysis of history with no racial component.",
+      "guardrail": "Analysis of history. Cycles of institutions, not races.",
       "why": "Challenges the official story of endless accumulating progress.",
       "related": ["Giambattista Vico", "Oswald Spengler", "Peter Turchin", "Ray Dalio"],
       "sort": 8,
-      "resources": []
+      "resources": [
+        {
+          "id": "res-005",
+          "kind": "book",
+          "title": "The Prophets of Doom",
+          "authors": "Neema Parvini",
+          "url": "https://en.wikipedia.org/wiki/Neema_Parvini",
+          "one_line": "A survey of thinkers who reject the endless-progress view of history.",
+          "guardrail": "Read as a map of cyclical theories. Parvini is a source, not a mascot.",
+          "year": "2023",
+          "free_or_pay": "mixed"
+        }
+      ]
+    },
+    {
+      "id": "thm-004",
+      "slug": "esotericism",
+      "title": "Esotericism",
+      "one_line": "Challenge your preconceptions and update your priors.",
+      "guardrail": "Hidden knowledge as method — psychogeography, mythic cities, avant-garde. Not a soil-cult and not an initiation fee.",
+      "why": "The official page treats only the approved surface as real. Some English writing treats the city and the infrastructure as a palimpsest.",
+      "related": ["Wyndham Lewis", "Iain Sinclair", "Peter Ackroyd"],
+      "sort": 7,
+      "resources": [
+        {
+          "id": "res-002",
+          "kind": "book",
+          "title": "Lud Heat",
+          "authors": "Iain Sinclair",
+          "url": "https://www.3ammagazine.com/3am/copywriters-of-the-future/",
+          "one_line": "Hawksmoor churches, ley lines, and the city's buried geometry — infrastructure as a haunted diagram.",
+          "guardrail": "Psychogeography. English soil here is a map, not a race-myth.",
+          "year": "1975",
+          "free_or_pay": "mixed"
+        },
+        {
+          "id": "res-003",
+          "kind": "book",
+          "title": "Albion: The Origins of the English Imagination",
+          "authors": "Peter Ackroyd",
+          "url": "https://en.wikipedia.org/wiki/Albion:_The_Origins_of_the_English_Imagination",
+          "one_line": "London as a living, cyclical organism — history and memory repeating through the stones of the street.",
+          "guardrail": "Psychogeography and mythic topography. Not occult nationalism.",
+          "year": "2002",
+          "free_or_pay": "mixed"
+        }
+      ]
     }
   ]
 }
