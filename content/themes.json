@@ -8,7 +8,11 @@
       "one_line": "Who actually decides, and how that differs from the story on the news.",
       "guardrail": "Analysis of power, not a hunt for bloodlines.",
       "why": "The envelope is often an elite consensus posing as weather. Name the machinery.",
-      "related": ["Vilfredo Pareto", "Robert Michels", "Neema Parvini"],
+      "related": [
+        "Vilfredo Pareto",
+        "Robert Michels",
+        "Neema Parvini"
+      ],
       "sort": 10,
       "resources": [
         {
@@ -31,7 +35,11 @@
       "one_line": "Privilege and high status carry a duty to act responsibly toward those with less of both.",
       "guardrail": "An alternative welfare grammar. Duty, not blood.",
       "why": "The envelope insists the current welfare model is the only welfare model.",
-      "related": ["Christopher Lasch", "Nassim Nicholas Taleb", "Alexis de Tocqueville"],
+      "related": [
+        "Christopher Lasch",
+        "Nassim Nicholas Taleb",
+        "Alexis de Tocqueville"
+      ],
       "sort": 9,
       "resources": [
         {
@@ -40,7 +48,7 @@
           "title": "The Revolt of the Elites and the Betrayal of Democracy",
           "authors": "Christopher Lasch",
           "url": "https://en.wikipedia.org/wiki/The_Revolt_of_the_Elites_and_the_Betrayal_of_Democracy",
-          "one_line": "Contrasts rooted, landed aristocracies with modern cosmopolitan meritocrats who treat privilege as purely earned and owe nothing to the places they leave.",
+          "one_line": "Contrasts rooted aristocracies with cosmopolitan meritocrats who treat privilege as purely earned.",
           "guardrail": "Historian and social critic. Class and place, not folk-biology.",
           "year": "1995",
           "free_or_pay": "mixed"
@@ -54,7 +62,12 @@
       "one_line": "Civilisations do not progress forever in a straight line. They thicken, peak, decay, and start again.",
       "guardrail": "Analysis of history. Cycles of institutions, not races.",
       "why": "Challenges the official story of endless accumulating progress.",
-      "related": ["Giambattista Vico", "Oswald Spengler", "Peter Turchin", "Ray Dalio"],
+      "related": [
+        "Giambattista Vico",
+        "Oswald Spengler",
+        "Peter Turchin",
+        "Ray Dalio"
+      ],
       "sort": 8,
       "resources": [
         {
@@ -76,8 +89,12 @@
       "title": "Esotericism",
       "one_line": "Challenge your preconceptions and update your priors.",
       "guardrail": "Hidden knowledge as method — psychogeography, mythic cities, avant-garde. Not a soil-cult and not an initiation fee.",
-      "why": "The official page treats only the approved surface as real. Some English writing treats the city and the infrastructure as a palimpsest.",
-      "related": ["Wyndham Lewis", "Iain Sinclair", "Peter Ackroyd"],
+      "why": "The official page treats only the approved surface as real. Some English writing treats the city as a palimpsest.",
+      "related": [
+        "Wyndham Lewis",
+        "Iain Sinclair",
+        "Peter Ackroyd"
+      ],
       "sort": 7,
       "resources": [
         {
@@ -100,6 +117,129 @@
           "one_line": "London as a living, cyclical organism — history and memory repeating through the stones of the street.",
           "guardrail": "Psychogeography and mythic topography. Not occult nationalism.",
           "year": "2002",
+          "free_or_pay": "mixed"
+        }
+      ]
+    },
+    {
+      "id": "thm-005",
+      "slug": "technology",
+      "title": "Advanced Technology",
+      "one_line": "Not possible British futures. Destiny, if a country will still build machines.",
+      "guardrail": "Grounded but hyper-ambitious. Labs and launch, not gadget sermons.",
+      "why": "No Anglofuturism without the future. Energy, compute, and orbit are the floor.",
+      "related": [
+        "Demis Hassabis",
+        "Mustafa Suleyman",
+        "Geoffrey Hinton"
+      ],
+      "sort": 6,
+      "resources": [
+        {
+          "id": "res-010",
+          "kind": "substack",
+          "title": "Planetocracy",
+          "authors": "Peter Hague",
+          "url": "https://planetocracy.org",
+          "one_line": "A British register of space as a working frontier, not a NASA costume.",
+          "guardrail": "Space as industry and research. Not empire-cosplay.",
+          "year": "2026",
+          "free_or_pay": "mixed"
+        }
+      ]
+    },
+    {
+      "id": "thm-006",
+      "slug": "anglofuturism",
+      "title": "Anglofuturism",
+      "one_line": "Britain dreams of itself — and is allowed to want altitude.",
+      "guardrail": "A deep idea of time, place, and meaning. Not a party and not a folk-religion.",
+      "why": "Foundational public workshops: the essay that named the mood, the podcast, the adjacent stacks.",
+      "related": [
+        "Aris Roussinos",
+        "Alexander D’Albini",
+        "Tom Ough",
+        "Calum Drysdale",
+        "Aeron Laffere"
+      ],
+      "sort": 5,
+      "resources": [
+        {
+          "id": "res-011",
+          "kind": "substack",
+          "title": "Anglofuturism Blast",
+          "authors": "Alexander D’Albini",
+          "url": "https://anglofuturismblast.substack.com/",
+          "one_line": "A running workshop in the same key: Britain as a country that can still want things.",
+          "guardrail": "One of the originators. Quote, do not enlist.",
+          "year": "2026",
+          "free_or_pay": "mixed"
+        },
+        {
+          "id": "res-012",
+          "kind": "podcast",
+          "title": "Anglofuturism Podcast",
+          "authors": "Tom Ough, Calum Drysdale",
+          "url": "https://podcasts.apple.com/gb/podcast/anglofuturism/id1743404902",
+          "one_line": "The most public workshop the movement has. Housing, energy, spaceports, state capacity.",
+          "guardrail": "Popularisers, not owners of the word.",
+          "year": "2024",
+          "free_or_pay": "free"
+        }
+      ]
+    },
+    {
+      "id": "thm-007",
+      "slug": "full-stack",
+      "title": "The Full Stack",
+      "one_line": "Substacks worth keeping on the desk — ordained or not.",
+      "guardrail": "Recommendations, not endorsements. Ideas, not a mailing-list church.",
+      "why": "Ideas matter a great deal here. This is a shelf, not a canon.",
+      "related": [],
+      "sort": 4,
+      "resources": [
+        {
+          "id": "res-006",
+          "kind": "substack",
+          "title": "Roots & Wings",
+          "authors": "Frank Furedi",
+          "url": "https://frankfuredi.substack.com/",
+          "one_line": "Against the manners of Western decline — education, authority, and the grown-up.",
+          "guardrail": "Sociologist. Read the argument, not the brand.",
+          "year": "2026",
+          "free_or_pay": "mixed"
+        },
+        {
+          "id": "res-007",
+          "kind": "substack",
+          "title": "Alasdair's Substack",
+          "authors": "Alasdair J. Marshall",
+          "url": "https://alasdairjmarshall.substack.com/",
+          "one_line": "Institutional and political reform as a craft problem.",
+          "guardrail": "New thinking. Not a station officer.",
+          "year": "2026",
+          "free_or_pay": "mixed"
+        },
+        {
+          "id": "res-008",
+          "kind": "substack",
+          "title": "Domesday Foundation",
+          "authors": "Domesday Foundation",
+          "url": "https://domesdayfoundation.substack.com/",
+          "one_line": "A possible branching future — building the next regime as a thought-experiment.",
+          "guardrail": "A branching future, not a putsch manual. Recommendation, not enlistment.",
+          "year": "2026",
+          "free_or_pay": "mixed"
+        },
+        {
+          "id": "res-009",
+          "kind": "substack",
+          "title": "Academy of Ideas",
+          "authors": "Academy of Ideas",
+          "url": "https://www.academyofideas.uk/",
+          "one_line": "When we said ideas matter, we meant it.",
+          "guardrail": "A factory of arguments. Not our membership desk.",
+          "year": "2026",
           "free_or_pay": "mixed"
         }
       ]

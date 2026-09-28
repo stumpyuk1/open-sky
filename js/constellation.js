@@ -15,7 +15,7 @@ function slugify(s) {
 }
 
 async function loadJSON(path) {
-  const res = await fetch(path + (path.includes("?") ? "&" : "?") + "v=12");
+  const res = await fetch(path + (path.includes("?") ? "&" : "?") + "v=13");
   if (!res.ok) throw new Error(path);
   return res.json();
 }
