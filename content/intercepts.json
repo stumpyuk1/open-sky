@@ -1,0 +1,45 @@
+{
+  "updated": "2026-09-29",
+  "max": 3,
+  "intercepts": [
+    {
+      "id": "int-001",
+      "title": "AI doom and Britain’s factory boom",
+      "kind": "podcast",
+      "url": "https://podcasts.apple.com/gb/podcast/ai-doom-and-britains-factory-boom/id1743404902?i=1000791082984",
+      "source": "Anglofuturism Podcast",
+      "one_line": "The latest public workshop: machines, factories, and whether Britain still believes in making things.",
+      "guardrail": "Public conversation. Not a party broadcast.",
+      "show_from": "2026-09-29",
+      "show_until": "2026-10-13",
+      "then_file_as": "drop",
+      "theme_slug": "anglofuturism"
+    },
+    {
+      "id": "int-002",
+      "title": "On Elite Theory: Clearing Up Conceptual Confusion, An FAQ",
+      "kind": "essay",
+      "url": "https://forbiddentexts.substack.com/p/on-elite-theory-clearing-up-conceptual",
+      "source": "Neema Parvini",
+      "one_line": "A short primer on who decides, written without the usual fog.",
+      "guardrail": "Thought-provoking, not a command to revolution. Analysis of power, not a hunt for bloodlines.",
+      "show_from": "2026-09-29",
+      "show_until": "2026-10-13",
+      "then_file_as": "drop",
+      "theme_slug": "elite-theory"
+    },
+    {
+      "id": "int-003",
+      "title": "The Crisis of Competence",
+      "kind": "essay",
+      "url": "https://frankfuredi.substack.com/p/announcing-a-new-project-exploring",
+      "source": "Frank Furedi · Roots & Wings",
+      "one_line": "A new project on the competence problem — one of the five pillars this station keeps on the desk.",
+      "guardrail": "Sociologist. Read the argument, not the brand.",
+      "show_from": "2026-09-29",
+      "show_until": "2026-10-13",
+      "then_file_as": "drop",
+      "theme_slug": "anglofuturism"
+    }
+  ]
+}

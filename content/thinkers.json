@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-28",
+  "updated": "2026-09-29",
   "thinkers": [
     {
       "id": "thk-001",
@@ -13,7 +13,11 @@
       "substack": "",
       "x_handle": "",
       "other_url": "",
-      "themes": ["energy", "habitation", "capacity"],
+      "themes": [
+        "energy",
+        "habitation",
+        "capacity"
+      ],
       "plate": "assets/log-knights.jpg"
     },
     {
@@ -28,7 +32,10 @@
       "substack": "",
       "x_handle": "",
       "other_url": "",
-      "themes": ["techno-optimism", "e-acc"],
+      "themes": [
+        "techno-optimism",
+        "e-acc"
+      ],
       "plate": "assets/log-space.jpg"
     },
     {
@@ -43,7 +50,10 @@
       "substack": "https://dominiccummings.substack.com/",
       "x_handle": "",
       "other_url": "",
-      "themes": ["effective-governance", "advanced-research"],
+      "themes": [
+        "effective-governance",
+        "advanced-research"
+      ],
       "plate": "assets/log-civil.jpg"
     },
     {
@@ -58,7 +68,10 @@
       "substack": "",
       "x_handle": "",
       "other_url": "",
-      "themes": ["history", "governance"],
+      "themes": [
+        "history",
+        "governance"
+      ],
       "plate": "assets/log-blitz.jpg"
     },
     {
@@ -73,23 +86,65 @@
       "substack": "",
       "x_handle": "",
       "other_url": "",
-      "themes": ["futurism", "esotericism"],
+      "themes": [
+        "futurism",
+        "esotericism"
+      ],
       "plate": "assets/log-storm.jpg"
     },
     {
       "id": "thk-006",
-      "name": "Sam Bowman",
-      "one_line": "Makes an Anglofuturist vision physically viable.",
-      "why": "Articulates the materialist, supply-side backbone of British techno-optimism.",
-      "guardrail": "Economist, not a movement officer. Numbers before slogans.",
-      "role": "thinker",
+      "name": "Works in Progress",
+      "one_line": "The materialist, supply-side backbone of British techno-optimism.",
+      "why": "Suppliers of competence and know-how — housing, energy, and the unglamorous arithmetic of building.",
+      "guardrail": "A journal, not a ministry. Steal the numbers.",
+      "role": "thinkers",
       "home_url": "https://worksinprogress.co/",
       "home_label": "Works in Progress",
       "substack": "",
       "x_handle": "",
       "other_url": "",
-      "themes": ["futurism", "habitation"],
+      "themes": [
+        "futurism",
+        "habitation",
+        "infrastructure"
+      ],
       "plate": "assets/log-rail.jpg"
+    },
+    {
+      "id": "thk-007",
+      "name": "Logos Movement",
+      "one_line": "Privacy-first builders of decentralised tools and local civic rooms.",
+      "why": "An embodiment of refusing the envelope — alternative futures that do not wait for a licence.",
+      "guardrail": "Exemplar, not a script. Parallel institutions, not a secession romance.",
+      "role": "builders",
+      "home_url": "https://logos.co/",
+      "home_label": "logos.co",
+      "substack": "",
+      "x_handle": "",
+      "other_url": "",
+      "themes": [
+        "futurism"
+      ],
+      "plate": "assets/log-space.jpg"
+    },
+    {
+      "id": "thk-008",
+      "name": "John Ruskin",
+      "one_line": "Craft, hierarchy, and producer guilds against soulless mass-fabrication.",
+      "why": "A moral aesthetic: vernacular craft and human-scale dignity fused with the capacity to still make difficult things.",
+      "guardrail": "Borrow the aesthetics and the conviction only. Not a medieval LARP and not a soil-cult.",
+      "role": "thinker",
+      "home_url": "https://www.guildofstgeorge.org.uk/resources/readings-from-ruskin",
+      "home_label": "Readings from Ruskin",
+      "substack": "",
+      "x_handle": "",
+      "other_url": "",
+      "themes": [
+        "governance",
+        "craft"
+      ],
+      "plate": "assets/log-pit.jpg"
     }
   ]
 }

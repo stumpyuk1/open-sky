@@ -261,9 +261,62 @@ function playIntro() {
   });
 }
 
+
+function isoToday() {
+  const d = new Date();
+  const z = (n) => String(n).padStart(2, "0");
+  return d.getFullYear() + "-" + z(d.getMonth() + 1) + "-" + z(d.getDate());
+}
+
+function inWindow(row, today) {
+  if (!row.show_from || !row.show_until) return false;
+  return row.show_from <= today && today <= row.show_until;
+}
+
+async function paintIntercepts() {
+  const shelf = document.getElementById("intercept-shelf");
+  const section = document.getElementById("intercepts");
+  if (!shelf) return;
+  try {
+    const res = await fetch("content/intercepts.json?v=14");
+    if (!res.ok) throw new Error("intercepts");
+    const data = await res.json();
+    const today = isoToday();
+    const live = (data.intercepts || []).filter((row) => inWindow(row, today)).slice(0, data.max || 3);
+    if (!live.length) {
+      section?.setAttribute("hidden", "");
+      return;
+    }
+    section?.removeAttribute("hidden");
+    shelf.innerHTML = "";
+    live.forEach((row, i) => {
+      const art = document.createElement("article");
+      art.className = "intercept";
+      art.style.setProperty("--tilt", ((i % 3) - 1) * 0.55 + "deg");
+      const theme = row.theme_slug
+        ? `<a class="stamp gold" href="themes.html#${row.theme_slug}">${row.theme_slug.replace(/-/g, " ")}</a>`
+        : "";
+      art.innerHTML = `
+        <div class="kind">${row.kind} · ${row.id}</div>
+        <h3><a href="${row.url}" target="_blank" rel="noopener">${row.title}</a></h3>
+        <p class="one">${row.one_line}</p>
+        ${row.guardrail ? `<p class="guard">${row.guardrail}</p>` : ""}
+        <div class="stamp-row">
+          <span class="stamp">${row.source || ""}</span>
+          <span class="stamp black">down ${row.show_until}</span>
+          ${theme}
+        </div>`;
+      shelf.appendChild(art);
+    });
+  } catch (e) {
+    section?.setAttribute("hidden", "");
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   playIntro();
   paintLogs();
+  paintIntercepts();
   bindFilters();
   document.getElementById("modal")?.addEventListener("click", (e) => {
     if (e.target.id === "modal") closeModal();
