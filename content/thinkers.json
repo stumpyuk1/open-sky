@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-29",
+  "updated": "2026-10-03",
   "thinkers": [
     {
       "id": "thk-001",
@@ -145,6 +145,92 @@
         "craft"
       ],
       "plate": "assets/log-pit.jpg"
+    },
+    {
+      "id": "thk-009",
+      "name": "The Wyvern Fellowship",
+      "one_line": "Preserving heritage, building resilience, securing a future.",
+      "why": "A national fellowship of people, families and local chapters for mutual support and cultural preservation across Britain.",
+      "guardrail": "Civic fellowship. Heritage as shared craft and mutual aid, not a soil-cult and not a party.",
+      "role": "builders",
+      "home_url": "https://thewyvernfellowship.org.uk/",
+      "home_label": "Website",
+      "substack": "",
+      "x_handle": "",
+      "other_url": "",
+      "themes": [
+        "craft",
+        "heritage",
+        "community"
+      ],
+      "plate": "assets/log-pit.jpg"
+    },
+    {
+      "id": "thk-010",
+      "name": "Philip Cunliffe",
+      "one_line": "A national-interest bulletin.",
+      "why": "Political theory in the Anglofuturist key: what a country is for, once the official page has finished.",
+      "guardrail": "A theorist, not a foreign-policy mascot. Quote the argument.",
+      "role": "thinker",
+      "home_url": "https://thephilippics.substack.com/",
+      "home_label": "Substack",
+      "substack": "https://thephilippics.substack.com/",
+      "x_handle": "",
+      "other_url": "",
+      "themes": [
+        "anglofuturism",
+        "geopolitics"
+      ],
+      "plate": "assets/log-civil.jpg"
+    },
+    {
+      "id": "thk-011",
+      "name": "David Deutsch",
+      "one_line": "Quantum theory of computation and information.",
+      "why": "Hauling the future closer one qubit at a time — explanation as a British craft.",
+      "guardrail": "Physicist. Steal the method, not a costume.",
+      "role": "technologist",
+      "home_url": "https://www.daviddeutsch.org.uk/",
+      "home_label": "Website",
+      "substack": "",
+      "x_handle": "",
+      "other_url": "",
+      "themes": [
+        "futurism"
+      ],
+      "plate": "assets/log-space.jpg"
+    },
+    {
+      "id": "thk-012",
+      "name": "Matt Ridley",
+      "one_line": "The history of innovation, written as rational optimism.",
+      "why": "The degrowth antidote: prosperity as the product of ideas that are allowed to copy.",
+      "guardrail": "Rational optimist. Numbers and history, not a party officer.",
+      "role": "thinker",
+      "home_url": "https://www.rationaloptimistsociety.com/",
+      "home_label": "Rational Optimist Society",
+      "substack": "",
+      "x_handle": "",
+      "other_url": "",
+      "themes": [
+        "innovation"
+      ],
+      "plate": "assets/log-rail.jpg"
+    },
+    {
+      "id": "thk-013",
+      "name": "Free Speech Union",
+      "one_line": "For when you have already stepped outside the envelope.",
+      "why": "The practical defence of saying the unfiled thing out loud.",
+      "guardrail": "A union for speech. Not our membership desk and not a party mark.",
+      "role": "defenders",
+      "home_url": "https://freespeechunion.org/",
+      "home_label": "Website",
+      "substack": "",
+      "x_handle": "",
+      "other_url": "",
+      "themes": [],
+      "plate": "assets/log-blitz.jpg"
     }
   ]
 }
