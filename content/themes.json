@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-28",
+  "updated": "2026-10-06",
   "themes": [
     {
       "id": "thm-001",
@@ -185,6 +185,28 @@
           "guardrail": "Popularisers, not owners of the word.",
           "year": "2024",
           "free_or_pay": "free"
+        },
+        {
+          "id": "res-013",
+          "kind": "essay",
+          "title": "This is Anglofuturism",
+          "authors": "Benjamin De Rebel",
+          "url": "https://mallarduk.com/2023/12/this-is-anglofuturism/",
+          "one_line": "An early primer: the word, the mood, and why the official page ran out.",
+          "guardrail": "Early adopter essay. A primer, not a membership mark.",
+          "year": "2023",
+          "free_or_pay": "free"
+        },
+        {
+          "id": "res-014",
+          "kind": "essay",
+          "title": "Anglofuturism Digital Trust Network",
+          "authors": "Alfred Atreides",
+          "url": "https://anglofuturistenthusiast.substack.com/p/digital-serfdom-or-digital-sovereignty",
+          "one_line": "Digital serfdom or a liberty-first self-sovereign ID.",
+          "guardrail": "Pro-technology, pro-privacy. Not a kit for a parallel state.",
+          "year": "2025",
+          "free_or_pay": "free"
         }
       ]
     },
@@ -241,6 +263,43 @@
           "guardrail": "A factory of arguments. Not our membership desk.",
           "year": "2026",
           "free_or_pay": "mixed"
+        }
+      ]
+    },
+    {
+      "id": "thm-008",
+      "slug": "alt-governance",
+      "title": "Alt-Governance",
+      "one_line": "If there is a new way, try it — and it had better work.",
+      "guardrail": "Evolution, not revolution. Civic systems, not a coup kit and not a party.",
+      "why": "Systems of governance for the information age, filed as experiments rather than anointings.",
+      "related": [
+        "Metisocracy",
+        "Balaji Srinivasan"
+      ],
+      "sort": 3,
+      "resources": [
+        {
+          "id": "res-015",
+          "kind": "site",
+          "title": "Networked Commons Governance",
+          "authors": "Metisocracy",
+          "url": "https://networkedcommonsgovernance.org/",
+          "one_line": "Governance sketched for the information age.",
+          "guardrail": "A proposal. Evolution, not a script.",
+          "year": "2026",
+          "free_or_pay": "free"
+        },
+        {
+          "id": "res-016",
+          "kind": "site",
+          "title": "The Network State",
+          "authors": "Balaji Srinivasan",
+          "url": "https://thenetworkstate.com/",
+          "one_line": "A cloud-first account of how a polity might start.",
+          "guardrail": "A book, not our constitution.",
+          "year": "2022",
+          "free_or_pay": "free"
         }
       ]
     }
