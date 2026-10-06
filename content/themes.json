@@ -104,7 +104,7 @@
           "authors": "Iain Sinclair",
           "url": "https://www.3ammagazine.com/3am/copywriters-of-the-future/",
           "one_line": "Hawksmoor churches, ley lines, and the city's buried geometry — infrastructure as a haunted diagram.",
-          "guardrail": "Psychogeography. English soil here is a map, not a race-myth.",
+          "guardrail": "Psychogeography and mythic topography.",
           "year": "1975",
           "free_or_pay": "mixed"
         },
@@ -115,7 +115,7 @@
           "authors": "Peter Ackroyd",
           "url": "https://en.wikipedia.org/wiki/Albion:_The_Origins_of_the_English_Imagination",
           "one_line": "London as a living, cyclical organism — history and memory repeating through the stones of the street.",
-          "guardrail": "Psychogeography and mythic topography. Not occult nationalism.",
+          "guardrail": "Psychogeography and mythic topography.",
           "year": "2002",
           "free_or_pay": "mixed"
         }
@@ -142,7 +142,7 @@
           "authors": "Peter Hague",
           "url": "https://planetocracy.org",
           "one_line": "A British register of space as a working frontier, not a NASA costume.",
-          "guardrail": "Space as industry and research. Not empire-cosplay.",
+          "guardrail": "Space as industry and research.",
           "year": "2026",
           "free_or_pay": "mixed"
         },
@@ -175,7 +175,7 @@
           "authors": "VentureBeat",
           "url": "https://venturebeat.com/",
           "one_line": "Model releases, enterprise automation, and agents from announcement to deployment.",
-          "guardrail": "Trade press. Sheet called this AI Guardians; the URL is VentureBeat. No death-star kit included.",
+          "guardrail": "No death-star kit included.",
           "year": "2026",
           "free_or_pay": "free"
         },
@@ -197,7 +197,7 @@
       "slug": "anglofuturism",
       "title": "Anglofuturism",
       "one_line": "Britain dreams of itself — and is allowed to want altitude.",
-      "guardrail": "A deep idea of time, place, and meaning. Not a party and not a folk-religion.",
+      "guardrail": "A deep idea of time, place, and meaning. Not a party.",
       "why": "Foundational public workshops: the essay that named the mood, the podcast, the adjacent stacks.",
       "related": [
         "Aris Roussinos",
