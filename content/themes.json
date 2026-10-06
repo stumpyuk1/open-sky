@@ -145,6 +145,50 @@
           "guardrail": "Space as industry and research. Not empire-cosplay.",
           "year": "2026",
           "free_or_pay": "mixed"
+        },
+        {
+          "id": "res-017",
+          "kind": "site",
+          "title": "The Quantum Computing Report",
+          "authors": "GQI",
+          "url": "https://quantumcomputingreport.com/",
+          "one_line": "A running desk on quantum hardware, companies, and the road to useful machines.",
+          "guardrail": "A report, not a kit. Do not point it at the neighbour's router.",
+          "year": "2026",
+          "free_or_pay": "free"
+        },
+        {
+          "id": "res-018",
+          "kind": "site",
+          "title": "MIT Technology Review",
+          "authors": "MIT",
+          "url": "https://www.technologyreview.com/",
+          "one_line": "The future, written while it is still happening.",
+          "guardrail": "Observe, orient, decide, act. A magazine, not a brief.",
+          "year": "2026",
+          "free_or_pay": "mixed"
+        },
+        {
+          "id": "res-019",
+          "kind": "site",
+          "title": "VentureBeat — AI",
+          "authors": "VentureBeat",
+          "url": "https://venturebeat.com/",
+          "one_line": "Model releases, enterprise automation, and agents from announcement to deployment.",
+          "guardrail": "Trade press. Sheet called this AI Guardians; the URL is VentureBeat. No death-star kit included.",
+          "year": "2026",
+          "free_or_pay": "free"
+        },
+        {
+          "id": "res-020",
+          "kind": "site",
+          "title": "Figure AI",
+          "authors": "Figure",
+          "url": "https://www.figure.ai/",
+          "one_line": "Humanoid robots aimed at the home and the factory floor.",
+          "guardrail": "A company. Do not assemble a droid army.",
+          "year": "2026",
+          "free_or_pay": "free"
         }
       ]
     },
