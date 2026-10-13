@@ -278,7 +278,7 @@ async function paintIntercepts() {
   const section = document.getElementById("intercepts");
   if (!shelf) return;
   try {
-    const res = await fetch("content/intercepts.json?v=14");
+    const res = await fetch("content/intercepts.json?v=18");
     if (!res.ok) throw new Error("intercepts");
     const data = await res.json();
     const today = isoToday();

@@ -1,7 +1,46 @@
 {
-  "updated": "2026-09-29",
+  "updated": "2026-10-13",
   "max": 3,
   "intercepts": [
+    {
+      "id": "int-004",
+      "title": "The Coming Manhattan Project",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=LRdb8UmPnh0",
+      "source": "Peter H. Diamandis",
+      "one_line": "AI's 1942 moment: the build, not the scare.",
+      "guardrail": "Don't fear the future. A briefing, not a party broadcast.",
+      "show_from": "2026-10-13",
+      "show_until": "2026-10-27",
+      "then_file_as": "drop",
+      "theme_slug": "technology"
+    },
+    {
+      "id": "int-005",
+      "title": "The future of computing has to run in reverse.",
+      "kind": "podcast",
+      "url": "https://podcasts.apple.com/gb/podcast/rodolfo-rosini-ceo-vaire-computing-is-building-ai-chips/id1743404902?i=1000793208069",
+      "source": "Anglofuturism Podcast",
+      "one_line": "Front-running the compute crunch: chips that run backwards.",
+      "guardrail": "A public workshop. Not a party broadcast.",
+      "show_from": "2026-10-13",
+      "show_until": "2026-10-27",
+      "then_file_as": "drop",
+      "theme_slug": "anglofuturism"
+    },
+    {
+      "id": "int-006",
+      "title": "Welcome to Proto-Town",
+      "kind": "essay",
+      "url": "https://substack.com/home/post/p-196794597",
+      "source": "The Rational Optimist",
+      "one_line": "Escape the bureaucracy and build the town.",
+      "guardrail": "A sketch of a town, not a charter and not a party.",
+      "show_from": "2026-10-13",
+      "show_until": "2026-10-27",
+      "then_file_as": "drop",
+      "theme_slug": "alt-governance"
+    },
     {
       "id": "int-001",
       "title": "AI doom and Britain’s factory boom",
@@ -11,7 +50,7 @@
       "one_line": "The latest public workshop: machines, factories, and whether Britain still believes in making things.",
       "guardrail": "Public conversation. Not a party broadcast.",
       "show_from": "2026-09-29",
-      "show_until": "2026-10-13",
+      "show_until": "2026-10-12",
       "then_file_as": "drop",
       "theme_slug": "anglofuturism"
     },
@@ -24,7 +63,7 @@
       "one_line": "A short primer on who decides, written without the usual fog.",
       "guardrail": "Thought-provoking, not a command to revolution. Analysis of power, not a hunt for bloodlines.",
       "show_from": "2026-09-29",
-      "show_until": "2026-10-13",
+      "show_until": "2026-10-12",
       "then_file_as": "drop",
       "theme_slug": "elite-theory"
     },
@@ -37,7 +76,7 @@
       "one_line": "A new project on the competence problem — one of the five pillars this station keeps on the desk.",
       "guardrail": "Sociologist. Read the argument, not the brand.",
       "show_from": "2026-09-29",
-      "show_until": "2026-10-13",
+      "show_until": "2026-10-12",
       "then_file_as": "drop",
       "theme_slug": "anglofuturism"
     }
