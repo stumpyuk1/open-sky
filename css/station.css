@@ -1,15 +1,17 @@
-/* OPEN SKY — dark station */
+/* OPEN SKY — luminous station */
 :root {
-  --void: #070708;
-  --ink: #ece6da;
-  --ink-dim: #b7b0a4;
-  --panel: #121114;
-  --line: #3a3530;
-  --brass: #c9a24a;
-  --brass-dim: #8a6e32;
-  --stamp: #d6453a;
-  --stamp-deep: #8e241c;
-  --fog: #9aa7b0;
+  --void: #0e141c;
+  --ink: #f4efe6;
+  --ink-dim: #c9c0b0;
+  --panel: #161d28;
+  --line: #4a4034;
+  --brass: #e0b84a;
+  --brass-dim: #b08a30;
+  --stamp: #d96a3a;
+  --stamp-deep: #a04020;
+  --fog: #8eb8b0;
+  --teal: #6aafa0;
+  --gold: #e8c56a;
   --type: "Special Elite", "Courier Prime", ui-monospace, monospace;
   --serif: "IM Fell English", "Source Serif 4", "Iowan Old Style", Georgia, serif;
   --display: "Uncial Antiqua", "IM Fell English", Georgia, serif;
@@ -22,7 +24,7 @@ html { scroll-behavior: smooth; background: var(--void); }
 body {
   position: relative;
   z-index: 0;
-  background: radial-gradient(ellipse at 50% -10%, #1c1714 0%, var(--void) 52%), #070708;
+  background: radial-gradient(ellipse at 50% -10%, #2a241c 0%, var(--void) 55%), #0e141c;
   color: var(--ink);
   font-family: var(--serif);
   font-size: 18.5px;
